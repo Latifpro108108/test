@@ -7,61 +7,101 @@
 
         <!-- Initial Node -->
         <mxCell id="initialNode" value="" style="ellipse;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="100" width="40" height="40" as="geometry"/>
+          <mxGeometry x="160" y="50" width="40" height="40" as="geometry"/>
         </mxCell>
 
-        <!-- Action: Search Flight -->
-        <mxCell id="searchFlight" value="Search Flight" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="140" y="200" width="120" height="50" as="geometry"/>
+        <!-- Action: Create Account -->
+        <mxCell id="createAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="150" width="120" height="50" as="geometry"/>
         </mxCell>
 
-        <!-- Control Flow: Initial to Search Flight -->
-        <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="initialNode" target="searchFlight">
+        <!-- Control Flow: Initial to Create Account -->
+        <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="initialNode" target="createAccount">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Decision Node: Book Flight? -->
+        <!-- Decision Node: Manage Account or Reserve Flight -->
         <mxCell id="decision1" value="" style="rhombus;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="300" width="80" height="80" as="geometry"/>
+          <mxGeometry x="160" y="250" width="80" height="80" as="geometry"/>
         </mxCell>
 
-        <!-- Control Flow: Search Flight to Decision -->
-        <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="searchFlight" target="decision1">
+        <!-- Control Flow: Create Account to Decision -->
+        <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="createAccount" target="decision1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Action: Manage Account -->
+        <mxCell id="manageAccount" value="Manage Account" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Control Flow: Decision to Manage Account -->
+        <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision1" target="manageAccount">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Action: Reserve Flight -->
+        <mxCell id="reserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="350" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Control Flow: Decision to Reserve Flight -->
+        <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision1" target="reserveFlight">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Action: Schedule Flight -->
+        <mxCell id="scheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="450" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Control Flow: Reserve Flight to Schedule Flight -->
+        <mxCell id="flow5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="reserveFlight" target="scheduleFlight">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Decision Node: Payment -->
+        <mxCell id="decision2" value="" style="rhombus;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="160" y="550" width="80" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Control Flow: Schedule Flight to Decision 2 -->
+        <mxCell id="flow6" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="scheduleFlight" target="decision2">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
         <!-- Action: Make Payment -->
         <mxCell id="makePayment" value="Make Payment" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="140" y="400" width="120" height="50" as="geometry"/>
+          <mxGeometry x="120" y="650" width="120" height="50" as="geometry"/>
         </mxCell>
 
-        <!-- Control Flow: Decision to Make Payment (Yes) -->
-        <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision1" target="makePayment">
+        <!-- Control Flow: Decision to Make Payment -->
+        <mxCell id="flow7" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision2" target="makePayment">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Action: Cancel Booking -->
-        <mxCell id="cancelBooking" value="Cancel Booking" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="320" y="400" width="120" height="50" as="geometry"/>
+        <!-- Action: Cancel Flight -->
+        <mxCell id="cancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="650" width="120" height="50" as="geometry"/>
         </mxCell>
 
-        <!-- Control Flow: Decision to Cancel Booking (No) -->
-        <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision1" target="cancelBooking">
+        <!-- Control Flow: Decision to Cancel Flight -->
+        <mxCell id="flow8" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision2" target="cancelFlight">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
         <!-- Final Node -->
         <mxCell id="finalNode" value="" style="ellipse;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="500" width="40" height="40" as="geometry"/>
+          <mxGeometry x="160" y="750" width="40" height="40" as="geometry"/>
         </mxCell>
 
         <!-- Control Flow: Payment to Final Node -->
-        <mxCell id="flow5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="makePayment" target="finalNode">
+        <mxCell id="flow9" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="makePayment" target="finalNode">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Control Flow: Cancel Booking to Final Node -->
-        <mxCell id="flow6" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="cancelBooking" target="finalNode">
+        <!-- Control Flow: Cancel Flight to Final Node -->
+        <mxCell id="flow10" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="cancelFlight" target="finalNode">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
