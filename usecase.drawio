@@ -1,76 +1,48 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.1">
   <diagram name="Airline Use Case Diagram" id="ar5NScWRSAKjXjXUSOuu">
-    <mxGraphModel dx="1017" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1290" dy="470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <!-- Customers Actor -->
         <mxCell id="customer" value="Customer" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="60" width="40" height="60" as="geometry" />
         </mxCell>
-
-        <!-- Admin Actor -->
         <mxCell id="admin" value="Admin" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="60" width="40" height="60" as="geometry" />
         </mxCell>
-
-        <!-- Airline Operator Actor -->
         <mxCell id="operator" value="Airline Operator" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="240" width="40" height="60" as="geometry" />
         </mxCell>
-
-        <!-- Airline Manager Actor -->
         <mxCell id="manager" value="Airline Manager" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="420" width="40" height="60" as="geometry" />
         </mxCell>
-
-        <!-- Create Account Use Case -->
         <mxCell id="createAccount" value="Create Account" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="60" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Manage System Use Case -->
         <mxCell id="manageSystem" value="Manage System" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="160" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Search Flight Use Case -->
         <mxCell id="searchFlight" value="Search Flight" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="260" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Book Flight Use Case -->
         <mxCell id="bookFlight" value="Book Flight" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="360" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Cancel Flight Use Case (Generalized) -->
         <mxCell id="cancelFlight" value="Cancel Flight" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="460" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Request Feedback Use Case -->
         <mxCell id="requestFeedback" value="Request Feedback" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="560" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Respond Feedback Use Case -->
         <mxCell id="respondFeedback" value="Respond Feedback" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="660" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- View Flight Status Use Case -->
         <mxCell id="viewFlightStatus" value="View Flight Status" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="160" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Make Payment Use Case -->
         <mxCell id="makePayment" value="Make Payment" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="360" width="100" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Actor to Use Case Connections -->
-        <!-- Customer Connections -->
         <mxCell id="customerToCreateAccount" edge="1" parent="1" source="customer" target="createAccount">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -89,8 +61,6 @@
         <mxCell id="customerToRequestFeedback" edge="1" parent="1" source="customer" target="requestFeedback">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Admin Connections -->
         <mxCell id="adminToCreateAccount" edge="1" parent="1" source="admin" target="createAccount">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -100,8 +70,6 @@
         <mxCell id="adminToCancelFlight" edge="1" parent="1" source="admin" target="cancelFlight">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Operator Connections -->
         <mxCell id="operatorToCreateAccount" edge="1" parent="1" source="operator" target="createAccount">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -111,8 +79,6 @@
         <mxCell id="operatorToCancelFlight" edge="1" parent="1" source="operator" target="cancelFlight">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Manager Connections -->
         <mxCell id="managerToCreateAccount" edge="1" parent="1" source="manager" target="createAccount">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
