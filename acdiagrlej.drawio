@@ -51,7 +51,7 @@
         </mxCell>
 
         <!-- Action: Select Departure and Return Dates (Round Trip) -->
-        <mxCell id="selectRoundTripDates" value="Select Departure & Return Dates" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="selectRoundTripDates" value="Select Departure &amp; Return Dates" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="60" y="450" width="160" height="50" as="geometry"/>
         </mxCell>
 
@@ -71,7 +71,7 @@
         </mxCell>
 
         <!-- Action: Select Countries -->
-        <mxCell id="selectCountries" value="Select Departure & Arrival Countries" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="selectCountries" value="Select Departure &amp; Arrival Countries" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="160" y="550" width="160" height="50" as="geometry"/>
         </mxCell>
 
@@ -145,7 +145,7 @@
         </mxCell>
 
         <!-- Action: Receive Ticket and Check History -->
-        <mxCell id="receiveTicket" value="Receive Ticket & Check History" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="receiveTicket" value="Receive Ticket &amp; Check History" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="160" y="1150" width="160" height="50" as="geometry"/>
         </mxCell>
 
