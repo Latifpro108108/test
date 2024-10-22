@@ -4,105 +4,93 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <!-- Swimlane: Administrator -->
-        <mxCell id="AdminSwimlane" style="swimlane" vertex="1" parent="1">
-          <mxGeometry x="0" y="0" width="200" height="800" as="geometry" />
+        <mxCell id="AdminSwimlane" style="swimlane" parent="1" vertex="1">
+          <mxGeometry width="200" height="800" as="geometry" />
         </mxCell>
-        <!-- Administrator Actions -->
-        <mxCell id="AdminCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="AdminSwimlane">
+        <mxCell id="AdminCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" parent="AdminSwimlane" vertex="1">
           <mxGeometry x="20" y="20" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AdminManageSystem" value="Manage System" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="AdminSwimlane">
+        <mxCell id="AdminManageSystem" value="Manage System" style="rounded=1;whiteSpace=wrap;html=1;" parent="AdminSwimlane" vertex="1">
           <mxGeometry x="20" y="100" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AdminScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="AdminSwimlane">
+        <mxCell id="AdminScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="AdminSwimlane" vertex="1">
           <mxGeometry x="20" y="180" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AdminReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="AdminSwimlane">
+        <mxCell id="AdminReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="AdminSwimlane" vertex="1">
           <mxGeometry x="20" y="260" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AdminCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="AdminSwimlane">
+        <mxCell id="AdminCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="AdminSwimlane" vertex="1">
           <mxGeometry x="20" y="340" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AdminViewFlight" value="View Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="AdminSwimlane">
+        <mxCell id="AdminViewFlight" value="View Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="AdminSwimlane" vertex="1">
           <mxGeometry x="20" y="420" width="160" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- Swimlane: Airline Operator -->
-        <mxCell id="OperatorSwimlane" style="swimlane" vertex="1" parent="1">
-          <mxGeometry x="250" y="0" width="200" height="800" as="geometry" />
+        <mxCell id="OperatorSwimlane" style="swimlane" parent="1" vertex="1">
+          <mxGeometry x="250" width="200" height="800" as="geometry" />
         </mxCell>
-        <!-- Airline Operator Actions -->
-        <mxCell id="OperatorCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OperatorSwimlane">
+        <mxCell id="OperatorCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" parent="OperatorSwimlane" vertex="1">
           <mxGeometry x="20" y="20" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OperatorScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OperatorSwimlane">
+        <mxCell id="OperatorScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="OperatorSwimlane" vertex="1">
           <mxGeometry x="20" y="100" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OperatorReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OperatorSwimlane">
+        <mxCell id="OperatorReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="OperatorSwimlane" vertex="1">
           <mxGeometry x="20" y="180" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OperatorCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OperatorSwimlane">
+        <mxCell id="OperatorCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="OperatorSwimlane" vertex="1">
           <mxGeometry x="20" y="260" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OperatorViewFlight" value="View Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OperatorSwimlane">
+        <mxCell id="OperatorViewFlight" value="View Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="OperatorSwimlane" vertex="1">
           <mxGeometry x="20" y="340" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OperatorInputDetails" value="Input Airplane Details" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OperatorSwimlane">
+        <mxCell id="OperatorInputDetails" value="Input Airplane Details" style="rounded=1;whiteSpace=wrap;html=1;" parent="OperatorSwimlane" vertex="1">
           <mxGeometry x="20" y="420" width="160" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- Swimlane: Customer -->
-        <mxCell id="CustomerSwimlane" style="swimlane" vertex="1" parent="1">
-          <mxGeometry x="500" y="0" width="200" height="800" as="geometry" />
+        <mxCell id="CustomerSwimlane" style="swimlane" parent="1" vertex="1">
+          <mxGeometry x="500" width="200" height="800" as="geometry" />
         </mxCell>
-        <!-- Customer Actions -->
-        <mxCell id="CustomerCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="CustomerSwimlane">
+        <mxCell id="CustomerCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" parent="CustomerSwimlane" vertex="1">
           <mxGeometry x="20" y="20" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CustomerManageSystem" value="Manage System" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="CustomerSwimlane">
+        <mxCell id="CustomerManageSystem" value="Manage System" style="rounded=1;whiteSpace=wrap;html=1;" parent="CustomerSwimlane" vertex="1">
           <mxGeometry x="20" y="100" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CustomerScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="CustomerSwimlane">
+        <mxCell id="CustomerScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="CustomerSwimlane" vertex="1">
           <mxGeometry x="20" y="180" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CustomerReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="CustomerSwimlane">
+        <mxCell id="CustomerReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="CustomerSwimlane" vertex="1">
           <mxGeometry x="20" y="260" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CustomerCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="CustomerSwimlane">
+        <mxCell id="CustomerCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="CustomerSwimlane" vertex="1">
           <mxGeometry x="20" y="340" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CustomerMakePayments" value="Make Payments" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="CustomerSwimlane">
+        <mxCell id="CustomerMakePayments" value="Make Payments" style="rounded=1;whiteSpace=wrap;html=1;" parent="CustomerSwimlane" vertex="1">
           <mxGeometry x="20" y="420" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CustomerRequestFeedback" value="Request Feedback" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="CustomerSwimlane">
+        <mxCell id="CustomerRequestFeedback" value="Request Feedback" style="rounded=1;whiteSpace=wrap;html=1;" parent="CustomerSwimlane" vertex="1">
           <mxGeometry x="20" y="500" width="160" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- Swimlane: Airline Manager -->
-        <mxCell id="ManagerSwimlane" style="swimlane" vertex="1" parent="1">
-          <mxGeometry x="750" y="0" width="200" height="800" as="geometry" />
+        <mxCell id="ManagerSwimlane" style="swimlane" parent="1" vertex="1">
+          <mxGeometry x="750" width="200" height="800" as="geometry" />
         </mxCell>
-        <!-- Airline Manager Actions -->
-        <mxCell id="ManagerCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ManagerSwimlane">
+        <mxCell id="ManagerCreateAccount" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;" parent="ManagerSwimlane" vertex="1">
           <mxGeometry x="20" y="20" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ManagerManageSystem" value="Manage System" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ManagerSwimlane">
+        <mxCell id="ManagerManageSystem" value="Manage System" style="rounded=1;whiteSpace=wrap;html=1;" parent="ManagerSwimlane" vertex="1">
           <mxGeometry x="20" y="100" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ManagerScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ManagerSwimlane">
+        <mxCell id="ManagerScheduleFlight" value="Schedule Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="ManagerSwimlane" vertex="1">
           <mxGeometry x="20" y="180" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ManagerReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ManagerSwimlane">
+        <mxCell id="ManagerReserveFlight" value="Reserve Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="ManagerSwimlane" vertex="1">
           <mxGeometry x="20" y="260" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ManagerCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ManagerSwimlane">
+        <mxCell id="ManagerCancelFlight" value="Cancel Flight" style="rounded=1;whiteSpace=wrap;html=1;" parent="ManagerSwimlane" vertex="1">
           <mxGeometry x="20" y="340" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ManagerRespondFeedback" value="Respond to Feedback" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ManagerSwimlane">
+        <mxCell id="ManagerRespondFeedback" value="Respond to Feedback" style="rounded=1;whiteSpace=wrap;html=1;" parent="ManagerSwimlane" vertex="1">
           <mxGeometry x="20" y="420" width="160" height="60" as="geometry" />
         </mxCell>
-
       </root>
     </mxGraphModel>
   </diagram>
