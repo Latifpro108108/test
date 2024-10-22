@@ -9,7 +9,6 @@
         <mxCell id="initialNode" value="" style="ellipse;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="160" y="50" width="40" height="40" as="geometry"/>
         </mxCell>
-
         <!-- Action: Log In -->
         <mxCell id="logIn" value="Log In" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="120" y="150" width="120" height="50" as="geometry"/>
