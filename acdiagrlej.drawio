@@ -1,169 +1,113 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.1">
   <diagram name="Page-1" id="Ojdg7j3xLP1BAEYC3mI6">
-    <mxGraphModel>
+    <mxGraphModel dx="2867" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
-        <!-- Initial Node: Start of the flow -->
-        <mxCell id="initialNode" value="" style="ellipse;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="50" width="40" height="40" as="geometry"/>
+        <mxCell id="initialNode" value="" style="ellipse;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="50" width="40" height="40" as="geometry" />
         </mxCell>
-
-        <!-- Action: Log In -->
-        <mxCell id="logIn" value="Log In" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="120" y="150" width="120" height="50" as="geometry"/>
+        <mxCell id="logIn" value="Log In" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="120" y="150" width="120" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Initial to Log In -->
-        <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="initialNode" target="logIn">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="initialNode" target="logIn" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Decision Node: Select Trip Type (Round Trip or One Way) -->
-        <mxCell id="decision1" value="" style="rhombus;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="250" width="80" height="80" as="geometry"/>
+        <mxCell id="decision1" value="" style="rhombus;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="250" width="80" height="80" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Log In to Select Trip Type -->
-        <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="logIn" target="decision1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="logIn" target="decision1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Select Round Trip -->
-        <mxCell id="selectRoundTrip" value="Select Round Trip" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="60" y="350" width="120" height="50" as="geometry"/>
+        <mxCell id="selectRoundTrip" value="Select Round Trip" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="60" y="350" width="120" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Decision to Select Round Trip -->
-        <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision1" target="selectRoundTrip">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="decision1" target="selectRoundTrip" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Select One-Way -->
-        <mxCell id="selectOneWay" value="Select One Way" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="280" y="350" width="120" height="50" as="geometry"/>
+        <mxCell id="selectOneWay" value="Select One Way" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="280" y="350" width="120" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Decision to Select One-Way -->
-        <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision1" target="selectOneWay">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="decision1" target="selectOneWay" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Select Departure and Return Dates (Round Trip) -->
-        <mxCell id="selectRoundTripDates" value="Select Departure &amp; Return Dates" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="60" y="450" width="160" height="50" as="geometry"/>
+        <mxCell id="selectRoundTripDates" value="Select Departure &amp; Return Dates" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="60" y="450" width="160" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Round Trip to Select Dates -->
-        <mxCell id="flow5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="selectRoundTrip" target="selectRoundTripDates">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="selectRoundTrip" target="selectRoundTripDates" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Select Departure Date (One-Way) -->
-        <mxCell id="selectOneWayDate" value="Select Departure Date" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="280" y="450" width="120" height="50" as="geometry"/>
+        <mxCell id="selectOneWayDate" value="Select Departure Date" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="280" y="450" width="120" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: One-Way to Select Departure Date -->
-        <mxCell id="flow6" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="selectOneWay" target="selectOneWayDate">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow6" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="selectOneWay" target="selectOneWayDate" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Select Countries -->
-        <mxCell id="selectCountries" value="Select Departure &amp; Arrival Countries" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="550" width="160" height="50" as="geometry"/>
+        <mxCell id="selectCountries" value="Select Departure &amp; Arrival Countries" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="550" width="160" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Round Trip and One-Way to Select Countries -->
-        <mxCell id="flow7" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="selectRoundTripDates" target="selectCountries">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow7" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="selectRoundTripDates" target="selectCountries" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="flow8" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="selectOneWayDate" target="selectCountries">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow8" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="selectOneWayDate" target="selectCountries" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Search for Available Flights -->
-        <mxCell id="searchFlights" value="Search for Available Flights" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="650" width="160" height="50" as="geometry"/>
+        <mxCell id="searchFlights" value="Search for Available Flights" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="650" width="160" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Select Countries to Search Flights -->
-        <mxCell id="flow9" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="selectCountries" target="searchFlights">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow9" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="selectCountries" target="searchFlights" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: View Flight Details -->
-        <mxCell id="viewFlightDetails" value="View Flight Details" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="750" width="160" height="50" as="geometry"/>
+        <mxCell id="viewFlightDetails" value="View Flight Details" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="750" width="160" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Search Flights to View Flight Details -->
-        <mxCell id="flow10" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="searchFlights" target="viewFlightDetails">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow10" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="searchFlights" target="viewFlightDetails" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Decision Node: Request Feedback or Proceed to Booking -->
-        <mxCell id="decision2" value="" style="rhombus;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="850" width="80" height="80" as="geometry"/>
+        <mxCell id="decision2" value="" style="rhombus;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="850" width="80" height="80" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: View Flight Details to Decision Node -->
-        <mxCell id="flow11" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="viewFlightDetails" target="decision2">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow11" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="viewFlightDetails" target="decision2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Request Feedback -->
-        <mxCell id="requestFeedback" value="Request Feedback" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="60" y="950" width="120" height="50" as="geometry"/>
+        <mxCell id="requestFeedback" value="Request Feedback" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="60" y="950" width="120" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Decision Node to Request Feedback -->
-        <mxCell id="flow12" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision2" target="requestFeedback">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow12" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="decision2" target="requestFeedback" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Proceed to Booking -->
-        <mxCell id="proceedToBooking" value="Proceed to Booking" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="280" y="950" width="120" height="50" as="geometry"/>
+        <mxCell id="proceedToBooking" value="Proceed to Booking" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="280" y="950" width="120" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Decision Node to Proceed to Booking -->
-        <mxCell id="flow13" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="decision2" target="proceedToBooking">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow13" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="decision2" target="proceedToBooking" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Pay and Enter OTP -->
-        <mxCell id="payAndEnterOTP" value="Pay and Enter OTP" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="1050" width="160" height="50" as="geometry"/>
+        <mxCell id="payAndEnterOTP" value="Pay and Enter OTP" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1050" width="160" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Proceed to Booking to Pay and Enter OTP -->
-        <mxCell id="flow14" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="proceedToBooking" target="payAndEnterOTP">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow14" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="proceedToBooking" target="payAndEnterOTP" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Action: Receive Ticket and Check History -->
-        <mxCell id="receiveTicket" value="Receive Ticket &amp; Check History" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="1150" width="160" height="50" as="geometry"/>
+        <mxCell id="receiveTicket" value="Receive Ticket &amp; Check History" style="rounded=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1150" width="160" height="50" as="geometry" />
         </mxCell>
-
-        <!-- Control Flow: Pay and Enter OTP to Receive Ticket -->
-        <mxCell id="flow15" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="payAndEnterOTP" target="receiveTicket">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="flow15" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" parent="1" source="payAndEnterOTP" target="receiveTicket" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Final Node: End of the flow -->
-        <mxCell id="finalNode" value="" style="ellipse;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="160" y="1250" width="40" height="40" as="geometry"/>
+        <mxCell id="flow16" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="receiveTicket" target="h7imtiixh0N8altQ9gbH-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="1260" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-
-        <!-- Control Flow: Receive Ticket to Final Node -->
-        <mxCell id="flow16" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;endArrow=block;rounded=0;" edge="1" parent="1" source="receiveTicket" target="finalNode">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="h7imtiixh0N8altQ9gbH-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="150" y="1270" width="60" height="60" as="geometry" />
         </mxCell>
-
+        <mxCell id="h7imtiixh0N8altQ9gbH-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="h7imtiixh0N8altQ9gbH-2">
+          <mxGeometry width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="finalNode" value="" style="ellipse;fillColor=#000000;strokeColor=#000000;" parent="h7imtiixh0N8altQ9gbH-2" vertex="1">
+          <mxGeometry x="10" y="10" width="40" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
