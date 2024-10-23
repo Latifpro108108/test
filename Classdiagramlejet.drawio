@@ -1,77 +1,103 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.1">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Airline Reservation System">
-    <mxGraphModel dx="1223" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="ClassDiagram" id="Page-1">
+    <mxGraphModel dx="1290" dy="470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
+
         <!-- User Class -->
-        <mxCell id="User-0" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;" parent="1" vertex="1">
-          <mxGeometry x="220" y="120" width="160" height="138" as="geometry" />
+        <mxCell id="userClass" value="User" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="100" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="User-1" value="Name" style="text;align=left;" parent="User-0" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="userAttributes" value="- id: Integer&lt;br&gt;- name: String&lt;br&gt;- email: String&lt;br&gt;- password: String" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="userClass">
+          <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="User-2" value="Email" style="text;align=left;" parent="User-0" vertex="1">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        <mxCell id="userMethods" value="+ login()&lt;br&gt;+ register()&lt;br&gt;+ updateAccount()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="userClass">
+          <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="User-3" value="Phone Number" style="text;align=left;" parent="User-0" vertex="1">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="User-4" value="Register()" style="text;align=left;" parent="User-0" vertex="1">
-          <mxGeometry y="104" width="160" height="26" as="geometry" />
-        </mxCell>
-        
+
         <!-- Flight Class -->
-        <mxCell id="Flight-0" value="Flight" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;" parent="1" vertex="1">
-          <mxGeometry x="420" y="120" width="160" height="138" as="geometry" />
+        <mxCell id="flightClass" value="Flight" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Flight-1" value="Flight Number" style="text;align=left;" parent="Flight-0" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="flightAttributes" value="- flightID: Integer&lt;br&gt;- departure: String&lt;br&gt;- arrival: String&lt;br&gt;- date: Date&lt;br&gt;- time: Time" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="flightClass">
+          <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="Flight-2" value="Departure Time" style="text;align=left;" parent="Flight-0" vertex="1">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Flight-3" value="Arrival Time" style="text;align=left;" parent="Flight-0" vertex="1">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Flight-4" value="Get Details()" style="text;align=left;" parent="Flight-0" vertex="1">
-          <mxGeometry y="104" width="160" height="26" as="geometry" />
+        <mxCell id="flightMethods" value="+ searchFlight()&lt;br&gt;+ getFlightStatus()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="flightClass">
+          <mxGeometry as="geometry" />
         </mxCell>
 
         <!-- Booking Class -->
-        <mxCell id="Booking-0" value="Booking" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;" parent="1" vertex="1">
-          <mxGeometry x="620" y="120" width="160" height="138" as="geometry" />
+        <mxCell id="bookingClass" value="Booking" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="100" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Booking-1" value="Booking ID" style="text;align=left;" parent="Booking-0" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="bookingAttributes" value="- bookingID: Integer&lt;br&gt;- flightID: Integer&lt;br&gt;- userID: Integer&lt;br&gt;- seatNumber: String" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="bookingClass">
+          <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="Booking-2" value="Date of Booking" style="text;align=left;" parent="Booking-0" vertex="1">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        <mxCell id="bookingMethods" value="+ reserveFlight()&lt;br&gt;+ cancelReservation()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="bookingClass">
+          <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="Booking-3" value="Total Amount" style="text;align=left;" parent="Booking-0" vertex="1">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Booking-4" value="Confirm()" style="text;align=left;" parent="Booking-0" vertex="1">
-          <mxGeometry y="104" width="160" height="26" as="geometry" />
-        </mxCell>
-        
+
         <!-- Payment Class -->
-        <mxCell id="Payment-0" value="Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;" parent="1" vertex="1">
-          <mxGeometry x="820" y="120" width="160" height="138" as="geometry" />
+        <mxCell id="paymentClass" value="Payment" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Payment-1" value="Payment ID" style="text;align=left;" parent="Payment-0" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="paymentAttributes" value="- paymentID: Integer&lt;br&gt;- userID: Integer&lt;br&gt;- amount: Double&lt;br&gt;- paymentDate: Date" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="paymentClass">
+          <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="Payment-2" value="Amount" style="text;align=left;" parent="Payment-0" vertex="1">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        <mxCell id="paymentMethods" value="+ makePayment()&lt;br&gt;+ verifyOTP()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="paymentClass">
+          <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="Payment-3" value="Payment Date" style="text;align=left;" parent="Payment-0" vertex="1">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
+
+        <!-- Ticket Class -->
+        <mxCell id="ticketClass" value="Ticket" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Payment-4" value="Process Payment()" style="text;align=left;" parent="Payment-0" vertex="1">
-          <mxGeometry y="104" width="160" height="26" as="geometry" />
+        <mxCell id="ticketAttributes" value="- ticketID: Integer&lt;br&gt;- bookingID: Integer&lt;br&gt;- issueDate: Date&lt;br&gt;- classType: String" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ticketClass">
+          <mxGeometry as="geometry" />
         </mxCell>
+        <mxCell id="ticketMethods" value="+ generateTicket()&lt;br&gt;+ viewTicket()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ticketClass">
+          <mxGeometry as="geometry" />
+        </mxCell>
+
+        <!-- Feedback Class -->
+        <mxCell id="feedbackClass" value="Feedback" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="feedbackAttributes" value="- feedbackID: Integer&lt;br&gt;- userID: Integer&lt;br&gt;- message: String&lt;br&gt;- status: String" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="feedbackClass">
+          <mxGeometry as="geometry" />
+        </mxCell>
+        <mxCell id="feedbackMethods" value="+ submitFeedback()&lt;br&gt;+ viewFeedback()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="feedbackClass">
+          <mxGeometry as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+
+        <!-- User to Booking -->
+        <mxCell id="rel1" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="userClass" target="bookingClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Booking to Flight -->
+        <mxCell id="rel2" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="bookingClass" target="flightClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Booking to Payment -->
+        <mxCell id="rel3" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="bookingClass" target="paymentClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Booking to Ticket -->
+        <mxCell id="rel4" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="bookingClass" target="ticketClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- User to Feedback -->
+        <mxCell id="rel5" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="userClass" target="feedbackClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
