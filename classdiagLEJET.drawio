@@ -4,39 +4,62 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-2" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="400" width="160" height="86" as="geometry" />
+
+        <!-- User Class -->
+        <mxCell id="User" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="160" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-3" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3DAPn67qFgr6pZ0WOsif-2">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="User-Field" value="+ username: String&#10;+ password: String&#10;+ role: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="User">
+          <mxGeometry y="26" width="160" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="3DAPn67qFgr6pZ0WOsif-2">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        <mxCell id="User-Method" value="+ login(username, password)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="User">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-5" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3DAPn67qFgr6pZ0WOsif-2">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+
+        <!-- Flight Class -->
+        <mxCell id="Flight" value="Flight" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="100" width="160" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-6" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="400" width="160" height="86" as="geometry" />
+        <mxCell id="Flight-Field" value="+ flightNumber: String&#10;+ departure: String&#10;+ destination: String&#10;+ price: Double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="Flight">
+          <mxGeometry y="26" width="160" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3DAPn67qFgr6pZ0WOsif-6">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="Flight-Method" value="+ checkAvailability()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="Flight">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="3DAPn67qFgr6pZ0WOsif-6">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+
+        <!-- Booking Class -->
+        <mxCell id="Booking" value="Booking" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="160" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-9" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3DAPn67qFgr6pZ0WOsif-6">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="Booking-Field" value="+ bookingID: String&#10;+ flight: Flight&#10;+ user: User&#10;+ paymentStatus: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="Booking">
+          <mxGeometry y="26" width="160" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-10" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;exitX=1.013;exitY=0.831;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3DAPn67qFgr6pZ0WOsif-7">
-          <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="250" y="450" as="sourcePoint" />
-            <mxPoint x="330" y="448" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="Booking-Method" value="+ confirmBooking()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="Booking">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3DAPn67qFgr6pZ0WOsif-11" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="3DAPn67qFgr6pZ0WOsif-10">
-          <mxGeometry x="-1" relative="1" as="geometry" />
+
+        <!-- Payment Class -->
+        <mxCell id="Payment" value="Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="160" height="130" as="geometry" />
         </mxCell>
+        <mxCell id="Payment-Field" value="+ paymentID: String&#10;+ amount: Double&#10;+ status: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="Payment">
+          <mxGeometry y="26" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Payment-Method" value="+ processPayment()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" vertex="1" parent="Payment">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <mxCell id="Booking-User" value="User-Booking" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="1" source="User" target="Booking">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Booking-Flight" value="Flight-Booking" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="1" source="Flight" target="Booking">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Payment-Booking" value="Payment-Booking" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="1" source="Payment" target="Booking">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
