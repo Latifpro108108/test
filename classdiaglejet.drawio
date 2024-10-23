@@ -20,10 +20,10 @@
         <mxCell id="flightClass" value="Flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="100" width="160" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="flightAttributes" value="- flightNumber: String&#xa;- departureTime: Date&#xa;- arrivalTime: Date&#xa;- seatMap: List<String>" style="text;strokeColor=none;" vertex="1" parent="flightClass">
+        <mxCell id="flightAttributes" value="- flightNumber: String&#xa;- departureTime: Date&#xa;- arrivalTime: Date&#xa;- seatMap: List&lt;String&gt;" style="text;strokeColor=none;" vertex="1" parent="flightClass">
           <mxGeometry x="0" y="40" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="flightMethods" value="+ searchFlights(): List<Flight>&#xa;+ viewDetails(): void" style="text;strokeColor=none;" vertex="1" parent="flightClass">
+        <mxCell id="flightMethods" value="+ searchFlights(): List&lt;Flight&gt;&#xa;+ viewDetails(): void" style="text;strokeColor=none;" vertex="1" parent="flightClass">
           <mxGeometry x="0" y="120" width="160" height="60" as="geometry" />
         </mxCell>
 
@@ -75,11 +75,42 @@
         <mxCell id="flightHistoryClass" value="FlightHistory" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="300" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="flightHistoryAttributes" value="- historyID: String&#xa;- pastFlights: List<Flight>" style="text;strokeColor=none;" vertex="1" parent="flightHistoryClass">
+        <mxCell id="flightHistoryAttributes" value="- historyID: String&#xa;- pastFlights: List&lt;Flight&gt;" style="text;strokeColor=none;" vertex="1" parent="flightHistoryClass">
           <mxGeometry x="0" y="40" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="flightHistoryMethods" value="+ viewHistory(): void" style="text;strokeColor=none;" vertex="1" parent="flightHistoryClass">
           <mxGeometry x="0" y="100" width="160" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <!-- User to Booking -->
+        <mxCell id="rel1" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="userClass" target="bookingClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Booking to Flight -->
+        <mxCell id="rel2" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="bookingClass" target="flightClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Booking to Payment -->
+        <mxCell id="rel3" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="bookingClass" target="paymentClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Booking to Ticket -->
+        <mxCell id="rel4" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="bookingClass" target="ticketClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- User to FlightHistory -->
+        <mxCell id="rel5" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="userClass" target="flightHistoryClass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- User to Feedback -->
+        <mxCell id="rel6" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="userClass" target="feedbackClass">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
       </root>
