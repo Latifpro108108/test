@@ -8,61 +8,37 @@
         <!-- User Class -->
         <mxCell id="userClass" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="100" width="120" height="160" as="geometry" />
-          <User>
-            <ClassName>User</ClassName>
-            <Attributes>-id: Integer<br>-name: String<br>-email: String<br>-password: String</Attributes>
-            <Methods>+login()<br>+register()<br>+updateAccount()</Methods>
-          </User>
+          <mxCell value="User&#xa;-----------------&#xa;-id: Integer&#xa;-name: String&#xa;-email: String&#xa;-password: String&#xa;-----------------&#xa;+login()&#xa;+register()&#xa;+updateAccount()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" />
         </mxCell>
 
         <!-- Flight Class -->
         <mxCell id="flightClass" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="100" width="120" height="160" as="geometry" />
-          <Flight>
-            <ClassName>Flight</ClassName>
-            <Attributes>-flightID: Integer<br>-departure: String<br>-arrival: String<br>-date: Date<br>-time: Time</Attributes>
-            <Methods>+searchFlight()<br>+getFlightStatus()</Methods>
-          </Flight>
+          <mxCell value="Flight&#xa;-----------------&#xa;-flightID: Integer&#xa;-departure: String&#xa;-arrival: String&#xa;-date: Date&#xa;-time: Time&#xa;-----------------&#xa;+searchFlight()&#xa;+getFlightStatus()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" />
         </mxCell>
 
         <!-- Booking Class -->
         <mxCell id="bookingClass" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="100" width="120" height="160" as="geometry" />
-          <Booking>
-            <ClassName>Booking</ClassName>
-            <Attributes>-bookingID: Integer<br>-flightID: Integer<br>-userID: Integer<br>-seatNumber: String</Attributes>
-            <Methods>+reserveFlight()<br>+cancelReservation()</Methods>
-          </Booking>
+          <mxCell value="Booking&#xa;-----------------&#xa;-bookingID: Integer&#xa;-flightID: Integer&#xa;-userID: Integer&#xa;-seatNumber: String&#xa;-----------------&#xa;+reserveFlight()&#xa;+cancelReservation()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" />
         </mxCell>
 
         <!-- Payment Class -->
         <mxCell id="paymentClass" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="300" width="120" height="160" as="geometry" />
-          <Payment>
-            <ClassName>Payment</ClassName>
-            <Attributes>-paymentID: Integer<br>-userID: Integer<br>-amount: Double<br>-paymentDate: Date</Attributes>
-            <Methods>+makePayment()<br>+verifyOTP()</Methods>
-          </Payment>
+          <mxCell value="Payment&#xa;-----------------&#xa;-paymentID: Integer&#xa;-userID: Integer&#xa;-amount: Double&#xa;-paymentDate: Date&#xa;-----------------&#xa;+makePayment()&#xa;+verifyOTP()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" />
         </mxCell>
 
         <!-- Ticket Class -->
         <mxCell id="ticketClass" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="300" width="120" height="160" as="geometry" />
-          <Ticket>
-            <ClassName>Ticket</ClassName>
-            <Attributes>-ticketID: Integer<br>-bookingID: Integer<br>-issueDate: Date<br>-classType: String</Attributes>
-            <Methods>+generateTicket()<br>+viewTicket()</Methods>
-          </Ticket>
+          <mxCell value="Ticket&#xa;-----------------&#xa;-ticketID: Integer&#xa;-bookingID: Integer&#xa;-issueDate: Date&#xa;-classType: String&#xa;-----------------&#xa;+generateTicket()&#xa;+viewTicket()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" />
         </mxCell>
 
         <!-- Feedback Class -->
         <mxCell id="feedbackClass" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="300" width="120" height="160" as="geometry" />
-          <Feedback>
-            <ClassName>Feedback</ClassName>
-            <Attributes>-feedbackID: Integer<br>-userID: Integer<br>-message: String<br>-status: String</Attributes>
-            <Methods>+submitFeedback()<br>+viewFeedback()</Methods>
-          </Feedback>
+          <mxCell value="Feedback&#xa;-----------------&#xa;-feedbackID: Integer&#xa;-userID: Integer&#xa;-message: String&#xa;-status: String&#xa;-----------------&#xa;+submitFeedback()&#xa;+viewFeedback()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" />
         </mxCell>
 
         <!-- Relationships -->
